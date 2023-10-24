@@ -1,3 +1,5 @@
+const http = require("http");
+
 const requestListener = (request, response) => {
     response.setHeader('Content-Type', 'application/json');
     response.setHeader('X-Powered-By', 'NodeJS');
@@ -50,3 +52,11 @@ const requestListener = (request, response) => {
         }));
     }
 };
+
+const server = http.createServer(requestListener);
+
+const port = 5000;
+const hostname = "localhost";
+server.listen(port, hostname, () => {
+  console.log(`Server berjalan pada http://${hostname}:${port}`);
+});
