@@ -1,0 +1,16 @@
+{
+  "name": "latihan-membuat-web-server-untuk-machine-learning-dengan-compute-engine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.12",
+    "@tensorflow/tfjs": "^4.22.0"
+  }
+}
